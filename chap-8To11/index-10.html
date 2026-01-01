@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input and Conditional Statements 10</title>
+  </head>
+  <body>
+    <script>
+      var item1Name = prompt("Enter Name of Item 1:");
+      var item1Price = +prompt("Enter Price of " + item1Name + ":");
+      var item1Qty = +prompt("Enter Quantity of " + item1Name + ":");
+
+      var item2Name = prompt("Enter Name of Item 2:");
+      var item2Price = +prompt("Enter Price of " + item2Name + ":");
+      var item2Qty = +prompt("Enter Quantity of " + item2Name + ":");
+
+      var shippingCharges = +prompt("Enter Shipping Charges:");
+
+      var totalItem1 = item1Price * item1Qty;
+      var totalItem2 = item2Price * item2Qty;
+      var subTotal = totalItem1 + totalItem2 + shippingCharges;
+
+      var finalAmount = subTotal;
+      var discountDisplay = "0 PKR (No discount applied)";
+
+      if (subTotal > 2000) {
+        var discount = (subTotal * 10) / 100;
+        finalAmount = subTotal - discount;
+        discountDisplay = discount + " PKR (10% off)";
+      }
+
+      document.write("<h1>Shopping Cart Receipt</h1>");
+      document.write(
+        "<p>Price of <b>" + item1Name + "</b> is " + item1Price + "</p>"
+      );
+      document.write(
+        "<p>Quantity of <b>" + item1Name + "</b> is " + item1Qty + "</p>"
+      );
+      document.write(
+        "<p>Price of <b>" + item2Name + "</b> is " + item2Price + "</p>"
+      );
+      document.write(
+        "<p>Quantity of <b>" + item2Name + "</b> is " + item2Qty + "</p>"
+      );
+      document.write("<p>Shipping Charges: " + shippingCharges + "</p>");
+      document.write("<hr>");
+      document.write("<p>Subtotal: " + subTotal + " PKR</p>");
+      document.write("<p>Discount: " + discountDisplay + "</p>");
+      document.write(
+        "<h3>Total Cost of your order is: " + finalAmount + " PKR</h3>"
+      );
+    </script>
+  </body>
+</html>

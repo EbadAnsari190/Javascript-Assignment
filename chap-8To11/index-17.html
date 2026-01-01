@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input and Conditional Statements 17</title>
+  </head>
+  <body>
+    <script>
+      var num1 = +prompt("First number");
+      var num2 = +prompt("Second number");
+      var op = prompt("Operation (+, -, *, /, %)");
+      if (op === "+") {
+        alert(num1 + num2);
+      } else if (op === "-") {
+        alert(num1 - num2);
+      } else if (op === "*") {
+        alert(num1 * num2);
+      } else if (op === "/") {
+        alert(num1 / num2);
+      } else if (op === "%") {
+        alert(num1 % num2);
+      } else {
+        alert("Invalid operation");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input and Conditional Statements 11</title>
+  </head>
+  <body>
+    <script>
+      var secretNum = 7;
+      var guess = +prompt("Guess the secret number (1-10)");
+      if (guess === secretNum) {
+        alert("Bingo! Correct answer");
+      } else if (guess + 1 === secretNum || guess - 1 === secretNum) {
+        alert("Close enough to the correct answer");
+      } else {
+        alert("Wrong guess");
+      }
+    </script>
+  </body>
+</html>

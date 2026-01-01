@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input and Conditional Statements 13</title>
+  </head>
+  <body>
+    <script>
+      var team1Name = prompt("Enter Name of Team 1:");
+      var team2Name = prompt("Enter Name of Team 2:");
+
+      var team1Score = +prompt("Enter Total Score of " + team1Name + ":");
+      var team2Score = +prompt("Enter Total Score of " + team2Name + ":");
+
+      if (team1Score > team2Score) {
+        alert(team1Name + " has won the game!");
+      } else if (team2Score > team1Score) {
+        alert(team2Name + " has won the game!");
+      } else if (team1Score === team2Score) {
+        alert("It's a TIE! Both teams scored " + team1Score);
+      } else {
+        alert("Invalid input! Please enter numbers for scores.");
+      }
+    </script>
+  </body>
+</html>
