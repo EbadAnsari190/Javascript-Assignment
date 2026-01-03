@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array 11</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <script>
+      var students = ["Ebad", "Abdullah", "Haider"];
+      var scores = [320, 230, 480];
+      var totalMarks = 500;
+
+      for (var i = 0; i < students.length; i++) {
+        var percentage = (scores[i] / totalMarks) * 100;
+        document.write(
+          "Score of " +
+            students[i] +
+            " is " +
+            scores[i] +
+            ". Percentage: " +
+            percentage +
+            "%<br>"
+        );
+      }
+    </script>
+  </body>
+</html>

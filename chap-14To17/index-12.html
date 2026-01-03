@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array 12</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <script>
+      var colors = ["Red", "Green", "Blue"];
+      document.write("Initial colors: " + colors + "<br>");
+
+      var startColor = prompt("Enter a color to add to the beginning:");
+      colors.unshift(startColor);
+
+      var endColor = prompt("Enter a color to add to the end:");
+      colors.push(endColor);
+
+      colors.unshift("Yellow", "Purple");
+
+      colors.shift();
+
+      colors.pop();
+
+      var indexToAdd = prompt("At which index do you want to add a color?");
+      var newColor = prompt("Enter color name:");
+      colors.splice(indexToAdd, 0, newColor);
+
+      var indexToDel = prompt("From which index do you want to delete colors?");
+      var countToDel = prompt("How many colors do you want to delete?");
+      colors.splice(indexToDel, countToDel);
+
+      document.write("Updated colors: " + colors);
+    </script>
+  </body>
+</html>

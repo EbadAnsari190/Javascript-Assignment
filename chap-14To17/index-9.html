@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array 9</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <script>
+      var topMovies = [];
+      topMovies.push("Avengers: Age of Ultron");
+      topMovies.push("Minions");
+      topMovies.push("Jurassic World");
+      topMovies.push("Inside Out");
+
+      document.write("<h1>Top Movies</h1>");
+      document.write("Top movies of 2015");
+      for (var i = 0; i < topMovies.length; i++) {
+        document.write(i + 1 + ") " + topMovies[i] + "<br>");
+      }
+      document.write("<h3>Length of the array: " + topMovies.length + "</h3>");
+    </script>
+  </body>
+</html>
