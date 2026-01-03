@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If-Else Conditions 6</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <script>
+      var char = prompt("Enter a character (number or letter):");
+      var code = char.charCodeAt(0);
+
+      if (code >= 48 && code <= 57) {
+        alert("Input is a number");
+      } else if (code >= 65 && code <= 90) {
+        alert("Input is an Uppercase letter");
+      } else if (code >= 97 && code <= 122) {
+        alert("Input is a Lowercase letter");
+      } else {
+        alert("Input is not a number or a letter");
+      }
+    </script>
+  </body>
+</html>

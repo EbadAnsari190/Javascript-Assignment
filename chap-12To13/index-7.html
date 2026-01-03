@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If-Else Conditions 7</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <script>
+      var num1 = Number(prompt("Enter first number:"));
+      var num2 = Number(prompt("Enter second number:"));
+      var operator = prompt("Enter operator (+, -, *, /, %):");
+
+      if (operator === "+") {
+        alert("Result: " + (num1 + num2));
+      } else if (operator === "-") {
+        alert("Result: " + (num1 - num2));
+      } else if (operator === "*") {
+        alert("Result: " + num1 * num2);
+      } else if (operator === "/") {
+        alert("Result: " + num1 / num2);
+      } else if (operator === "%") {
+        alert("Result: " + (num1 % num2));
+      } else {
+        alert("Invalid operator");
+      }
+    </script>
+  </body>
+</html>

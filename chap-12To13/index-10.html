@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If-Else Conditions 10</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <script>
+      var correctPass = "karachi123";
+      var userPass = prompt("Enter your password:");
+
+      if (!userPass) {
+        alert("Please enter your password");
+      } else if (userPass === correctPass) {
+        alert(
+          "Correct! The password you entered matches the original password"
+        );
+      } else {
+        alert("Incorrect password");
+      }
+    </script>
+  </body>
+</html>
