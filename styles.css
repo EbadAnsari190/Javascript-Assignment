@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   background-color: rgb(128, 255, 255);
 }
 
@@ -38,9 +36,68 @@
 h1 {
   color: rgb(0, 81, 255);
   text-align: center;
-  margin-top: 20%;
   font-family: cursive;
   font-size: 50px;
   animation: fadeIn 0.8s ease-out, float 3s ease-in-out infinite,
     textGlow 2s ease-in-out infinite;
+}
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: cursive;
+  font-size: 40px;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-out, float 3s ease-in-out infinite,
+    textGlow 2s ease-in-out infinite;
+}
+h3 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: cursive;
+  font-size: 32px;
+  margin-top: 15px;
+  animation: fadeIn 1s ease-out, float 3s ease-in-out infinite,
+    textGlow 2s ease-in-out infinite;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+body {
+  text-align: center;
+}
+a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: capitalize;
+  font-family: cursive;
+  font-size: 25px;
+  margin: 5px auto;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(255, 0, 0);
+}
+a:hover {
+  color: rgb(0, 129, 214);
+  text-decoration: underline;
 }
